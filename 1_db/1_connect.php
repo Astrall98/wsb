@@ -1,3 +1,3 @@
-test
-second line
-third line
+<?php
+  echo "string";
+ ?>
