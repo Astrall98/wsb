@@ -6,13 +6,28 @@
   </head>
   <body>
     <h3>Użytkownicy z tabeli users</h3>
+    <table>
+      <tr>
+        <th>Imię i nazwisko</th>
+        <th>Miasto</th>
+        <th>Data utworzenia konta</th>
+      </tr>
     <?php
-      require_once('./scripts/connect.php');
-      $sql = "SELECT * FROM 'users'";
+      require_once('./scripts/1_connect.php');
+      $count = 0;
+      $sql = "SELECT * FROM `users` INNER JOIN `cities` ON `users`.`city_id` = `cities`.`id`";
       $result = $connect->query($sql);
       while ($user = $result->fetch_assoc()) {
-        echo $user['name'];
+        $count++;
+        echo <<< E
+        <tr>
+        <td>$user[name] $user[surname]</td>
+        <td>$user[city]</td>
+        <td>$user[created_at]
+        </tr>
+        E;
       }
     ?>
+    </table>
   </body>
 </html>
