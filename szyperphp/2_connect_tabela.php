@@ -29,7 +29,7 @@
       <td>$user[city]</td>
       <td>$user[birthday]</td>
       <td>$user[created_at]</td>
-      <td><a href='./scripts/delete.php?userid=$user[id]'>Usuń</a></td>
+      <td><a href='./scripts/delete.php?id=$user[id]'>Usuń</a></td>
       </tr>
 E;
     echo "</tr>";

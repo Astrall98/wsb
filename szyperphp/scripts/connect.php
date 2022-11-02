@@ -1,4 +1,4 @@
-<?php 
-  $conn = new mysqli('localhost', 'root', '', 'wsb_nst');
+<?php
+  $conn = new mysqli('localhost', 'root', '', 'project');
   // echo "string";
  ?>

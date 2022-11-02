@@ -6,7 +6,7 @@
   </head>
   <body>
     <h4>Użytkownicy</h4>
-<?php 
+<?php
   require_once './scripts/connect.php';
   $sql = "SELECT * FROM `users`";
   $result = $conn->query($sql);
@@ -21,8 +21,8 @@
       <hr>
 E;
   }
-  
-  
+
+
  ?>
   </body>
 </html>
