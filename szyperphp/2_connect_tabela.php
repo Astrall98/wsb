@@ -12,7 +12,7 @@
         <th>Imię i nazwisko</th>
         <th>Miasto</th>
         <th>Data urodzenia</th>
-        <th>Data dodania użytkownika</th>
+        <!--<th>Data dodania użytkownika</th>-->
       </tr>
 <?php
   require_once './scripts/connect.php';
